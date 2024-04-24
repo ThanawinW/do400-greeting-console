@@ -23,7 +23,7 @@ pipeline{
         stage('Release') {
             steps {
                 sh '''
-                    oc project pceqzg-greetings
+                    oc project pceqzg-greeting
                     oc start-build greeting-console --follow --wait
                 '''
             }
